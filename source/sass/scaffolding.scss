@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
+  min-width: 320px;
+  height: 100vh;
+  word-wrap: break-word;
+  background-image: url("../img/background-picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 85% 20%;
+  background-position: 50% 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+picture {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

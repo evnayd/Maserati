@@ -1,0 +1,116 @@
+.story {
+  display: none;
+
+  @media only screen and (min-width: $tablet-width) {
+      width: 400px;
+      padding-bottom: 130px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 40px;
+      text-align: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-image: linear-gradient(45deg, transparent 50%, white 50%);
+      z-index: 40;
+      display: block;
+    }
+
+    @media only screen and (min-width: $desktop-width) {
+      width: 590px;
+      padding-bottom: 264px;
+      padding-right: 63px;
+      padding-top: 46px;
+    }
+}
+
+.story__title {
+  @media only screen and (min-width: $tablet-width) {
+    font-family: $first-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 38px;
+    color: #0D0D0D;
+    margin-top: 0;
+    margin-bottom: 34px;
+    position: relative;
+  }
+
+  @media only screen and (min-width: $desktop-width) {
+    font-size: 56px;
+    line-height: 75px;
+    margin-bottom: 42px;
+  }
+}
+
+.story__title::before {
+  @media only screen and (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    transform: rotate(90deg);
+    height: 0px;
+    width: 30px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    top: 20px;
+    right: -25px;
+  }
+
+  @media only screen and (min-width: $desktop-width) {
+    width: 70px;
+    top: 30px;
+    right: -60px;
+  }
+}
+
+.story__link {
+  @media only screen and (min-width: $tablet-width) {
+    font-family: $second-font;
+    color: $details-color;
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    display: block;
+  }
+}
+
+.story__link:hover {
+  @media only screen and (min-width: $tablet-width) {
+    @include right-move;
+  }
+}
+
+.story__link::before {
+  @media only screen and (min-width: $tablet-width) {
+    @include link;
+    background-image: url("../img/arrow-black.svg");
+  }
+}
+
+.story__link:hover::before {
+  @media only screen and (min-width: $tablet-width) {
+    @include link-hover;
+  }
+}
+
+.story__text {
+  @media only screen and (min-width: $tablet-width) {
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $details-color;
+    margin-right: auto;
+    margin-left: 50%;
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 66px;
+  }
+}

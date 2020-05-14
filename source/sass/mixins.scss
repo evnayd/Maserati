@@ -1,0 +1,32 @@
+@mixin link (){
+  position: absolute;
+  content: "";
+  background-repeat:no-repeat;
+  top: 5px;
+  right: 0;
+  background-size: contain;
+  opacity: 0%;
+  width: 7px;
+  height: 6px;
+
+  @media only screen and (min-width: $tablet-width) {
+    width: 8px;
+    height: 7px;
+  }
+}
+
+@mixin link-hover {
+  opacity: 100%;
+  transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+}
+
+@mixin right-move {
+  padding-right: 30px;
+   transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}

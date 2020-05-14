@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Regular", "Playfair-Display Regular", "playfair display regular");
+  src: url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Bold", "Playfair-Display Bold", "playfair display bold");
+  src: url("../fonts/PlayfairDisplay-ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Podkova";
+  src: local("Podkova Regular", "podkova regular", "podkova-regular");
+  src: url("../fonts/Podkova-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Podkova";
+  src: local("Podkova Bold", "podkova bold", "podkova-bold");
+  src: url("../fonts/Podkova-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
